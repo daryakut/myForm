@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <img src="./img/bear.png" alt="bearIMG" />
+      </div>
+      <div class="right">
+        <div class="form__container">
+      
+          <div class="form__header">
+            <div class="first__group">
+              <h1>Create account</h1>
+              <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google"></i>
+              </div>
+            </div>
+            <p>Or register using email & password</p>
+          </div>
+          <form action="" id="myForm" onsubmit="handleFormSubmit(event)">
+            <div class="form__group">
+              <label for="name">Full name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="John Rambo"
+              />
+            </div>
+            <div class="form__group">
+              <label for="email">Email adress</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="hello@hey.com"
+              />
+            </div>
+            <div class="form__group">
+              <label for="password1">Create Password</label>
+              <input
+                type="password"
+                name="password1"
+                id="password1"
+                placeholder="••••••••••••"
+              />
+            </div>
+            <div class="form__group">
+              <label for="password2">Confirm Password</label>
+              <input
+                type="password"
+                name="password2"
+                id="password2"
+                placeholder="••••••••••••"
+              />
+            </div>
+            <div class="checkbox__group">
+              <input type="checkbox" name="check" id="check" checked />
+              <label
+                for="check"
+                class="myCheck"
+                onclick="toggleCheckbox()"
+              ></label>
+
+              <p>
+                I agree to the <a href="">terms</a> &
+                <a href="">privacy policy</a>
+              </p>
+            </div>
+            <button type="submit" class="btn">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/a954e9f8b9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
